@@ -23,4 +23,4 @@ kill $FOO_PID
 ./node_modules/.bin/karma start karma.conf.js
 ```
 
-Test 2 for adding a line
+Test 3 for adding a line
