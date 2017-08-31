@@ -16,6 +16,6 @@
 
     $scope.removeData = function () {
         $scope.removeLastData();
-    }
+    };
     $scope.data = data;
 });
