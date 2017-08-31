@@ -14,5 +14,8 @@
         $scope.newData.data2 = '';
     };
 
+    $scope.removeData = function () {
+        $scope.removeLastData();
+    }
     $scope.data = data;
 });
