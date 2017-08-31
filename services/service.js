@@ -11,7 +11,7 @@ app.service('service', function () {
     };
 
     this.removeLastData = function () {
-        data.pop;
+        data.pop();
     };
 
 });
