@@ -14,14 +14,14 @@ exports.config = {
 
   multiCapabilities: [{
     browserName: 'firefox',
-    version: 'latest',
+    version: '55',
     platform: 'OS X 10.10',
     name: "firefox-tests",
     shardTestFiles: true,
     maxInstances: 25
   }, {
     browserName: 'chrome',
-    version: 'latest',
+    version: '65',
     platform: 'Windows 7',
     name: "chrome-tests",
     shardTestFiles: true,
