@@ -14,7 +14,7 @@ exports.config = {
 
   multiCapabilities: [{
     browserName: 'firefox',
-    version: '32',
+    version: 'latest',
     platform: 'OS X 10.10',
     name: "firefox-tests",
     shardTestFiles: true,
