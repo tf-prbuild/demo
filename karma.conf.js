@@ -15,7 +15,7 @@ module.exports = function(config) {
     'SL_InternetExplorer': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
-      version: '11',
+      version: '10',
       platform: 'Windows 8'
     },
     'SL_FireFox': {
