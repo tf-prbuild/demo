@@ -9,20 +9,20 @@ module.exports = function(config) {
     'SL_Chrome': {
       base: 'SauceLabs',
       browserName: 'chrome',
-      version: 40,
+      version: '61',
       platform: 'XP'
     },
     'SL_InternetExplorer': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
-      version: '10',
-      platform: 'Windows 7'
+      version: '11',
+      platform: 'Windows 8'
     },
     'SL_FireFox': {
       base: 'SauceLabs',
       browserName: 'firefox',
-      platform: 'Linux',
-      version: 31
+      platform: 'macOS 10.12',
+      version: '56'
     }
   };
 
