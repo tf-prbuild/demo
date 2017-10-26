@@ -10,7 +10,7 @@ module.exports = function(config) {
       base: 'SauceLabs',
       browserName: 'chrome',
       version: '61',
-      platform: 'XP'
+      platform: 'Windows 10'
     },
     'SL_InternetExplorer': {
       base: 'SauceLabs',
