@@ -29,7 +29,7 @@ exports.config = {
   }, {
     browserName: 'internet explorer',
     version: '11',
-    platform: 'Windows 8',
+    platform: 'Windows 10',
     name: "ie11-tests",
     shardTestFiles: true,
     maxInstances: 25
