@@ -8,7 +8,8 @@ exports.config = {
 
  // restartBrowserBetweenTests: true,
 
-    // Try again
+    // Turn SC back on for Jenkins
+
   onPrepare: function(){
       var caps = browser.getCapabilities();
   },
