@@ -8,6 +8,7 @@ exports.config = {
 
  // restartBrowserBetweenTests: true,
 
+    // Try again
   onPrepare: function(){
       var caps = browser.getCapabilities();
   },
