@@ -50,5 +50,8 @@ exports.config = {
       });
     };
     printSessionId("Insert Job Name Here");
-  }
+  },
+    jasmineNodeOpts: {
+        defaultTimeoutInterval: 240000
+    }
 };
