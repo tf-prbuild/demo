@@ -1,4 +1,4 @@
-all: setup static_code_anlysis unit_tests functional_tests
+all: setup static_code_anlysis functional_tests
 
 setup:
 	@echo "\n\n\n--------\nRunning setup...\n--------\n\n"
