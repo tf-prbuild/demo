@@ -6,7 +6,9 @@ exports.config = {
   //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
   specs: ['specs/*spec.js'],
 
-  // restartBrowserBetweenTests: true,
+ // restartBrowserBetweenTests: true,
+
+    // Turn SC back on for Jenkins
 
   onPrepare: function(){
       var caps = browser.getCapabilities();
@@ -16,28 +18,28 @@ exports.config = {
     browserName: 'firefox',
     version: '56',
     platform: 'macOS 10.12',
-    name: "firefox-tests",
+    name: "ff-mac",
     shardTestFiles: true,
     maxInstances: 25
   }, {
     browserName: 'chrome',
     version: '61',
     platform: 'Windows 10',
-    name: "chrome-tests",
+    name: "chrome-win10",
     shardTestFiles: true,
     maxInstances: 25
   }, {
     browserName: 'internet explorer',
     version: '11',
     platform: 'Windows 10',
-    name: "ie11-tests",
+    name: "ie11",
     shardTestFiles: true,
     maxInstances: 25
   }, {
     browserName: 'internet explorer',
     version: '10',
     platform: 'Windows 8',
-    name: 'win7-ie10',
+    name: 'ie10-win8',
     shardTestFiles: true,
     maxInstances: 25
   }],
@@ -50,5 +52,8 @@ exports.config = {
       });
     };
     printSessionId("Insert Job Name Here");
-  }
+  },
+    jasmineNodeOpts: {
+        defaultTimeoutInterval: 240000
+    }
 };
