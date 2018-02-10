@@ -1,7 +1,7 @@
   // conf.js
 
-  var user = process.env.SAUCE_USERNAME_UNIT;
-  var key = process.env.SAUCE_ACCESS_KEY_UNIT;
+  var user = process.env.SAUCE_USERNAME_UNIT || process.env.SAUCE_USERNAME;
+  var key = process.env.SAUCE_ACCESS_KEY_UNIT || process.env.SAUCE_ACCESS_KEY;
 
 exports.config = {
   sauceUser: user,
