@@ -1,7 +1,12 @@
   // conf.js
+
+  var user = process.env.SAUCE_USERNAME_UNIT || process.env.SAUCE_USERNAME;
+  var key = process.env.SAUCE_ACCESS_KEY_UNIT || process.env.SAUCE_ACCESS_KEY;
+
+
 exports.config = {
-  sauceUser: process.env.SAUCE_USERNAME,
-  sauceKey: process.env.SAUCE_ACCESS_KEY,
+  sauceUser: user,
+  sauceKey: key,
 
   //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
   specs: ['specs/*spec.js'],
