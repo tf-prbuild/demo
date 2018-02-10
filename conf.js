@@ -26,20 +26,6 @@ exports.config = {
     name: "chrome-tests",
     shardTestFiles: true,
     maxInstances: 25
-  }, {
-    browserName: 'internet explorer',
-    version: '11',
-    platform: 'Windows 10',
-    name: "ie11-tests",
-    shardTestFiles: true,
-    maxInstances: 25
-  }, {
-    browserName: 'internet explorer',
-    version: '10',
-    platform: 'Windows 8',
-    name: 'win7-ie10',
-    shardTestFiles: true,
-    maxInstances: 25
   }],
 
   getPageTimeout: 30000,

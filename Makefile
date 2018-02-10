@@ -1,4 +1,4 @@
-all: setup unit_tests functional_tests
+all: setup functional_tests
 
 setup:
 	@echo "\n\n\n--------\nRunning setup...\n--------\n\n"
