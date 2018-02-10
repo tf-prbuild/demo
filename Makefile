@@ -12,7 +12,6 @@ unit_tests:
 	@echo "\n\n\n--------\nRunning unit_tests...\n--------\n\n"
 	@rm -rf old_coverage && git pull origin master && mv coverage old_coverage
 	./node_modules/.bin/karma start karma.conf.js
-	@ruby code_coverage_checker.rb
 
 functional_tests:
 	@echo "\n\n\n--------\nRunning functional_tests...\n--------\n\n"
