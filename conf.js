@@ -42,7 +42,8 @@ exports.config = {
     maxInstances: 25
   }],
 
-  getPageTimeout: 30000,
+  getPageTimeout: 60000,
+  allScriptsTimeout: 60000,
 
   onComplete: function() {
 
