@@ -42,6 +42,8 @@ exports.config = {
     maxInstances: 25
   }],
 
+  getPageTimeout: 30000,
+
   onComplete: function() {
 
     var printSessionId = function(jobName){
@@ -50,5 +52,8 @@ exports.config = {
       });
     };
     printSessionId("Insert Job Name Here");
+  },
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 240000
   }
 };
