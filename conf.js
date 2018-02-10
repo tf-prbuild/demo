@@ -43,6 +43,7 @@ exports.config = {
   }],
 
   getPageTimeout: 30000,
+  allScriptsTimeout: 30000,
 
   onComplete: function() {
 
