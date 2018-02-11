@@ -19,7 +19,7 @@ pipeline {
             	sh 'rm -rf old_coverage && git pull origin master && mv coverage old_coverage'
                 sauce('titus') {
                     sauceconnect(verboseLogging: true) {
-                        sh 'make functional_tests'
+                        sh './node_modules/.bin/karma start karma.conf.js'
                     }
                 }
                 sh 'ruby code_coverage_checker.rb'
