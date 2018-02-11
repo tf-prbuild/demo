@@ -15,7 +15,6 @@ pipeline {
         stage('Unit Test') {
             steps {
                 sh './node_modules/.bin/karma start karma.conf.js'
-                }
             }
         }
         stage('Functional Test') {
