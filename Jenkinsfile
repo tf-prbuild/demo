@@ -2,20 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+        stage('Setup') {
+            sh npm install
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
+        stage('Static Code Analysis') {
+            sh 	./node_modules/.bin/jshint controllers services views test specs *.js
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+        stage('Unit Test') {
+            sh ./node_modules/.bin/karma start karma.conf.js
+        }
+        stage('Functional Test') {
+            sh ./deploy_and_test.sh
         }
     }
 }
