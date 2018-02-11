@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Functional Test') {
             steps {
-                sh './deploy_and_test.sh'
+                sh 'make functional_tests'
             }
         }
     }
