@@ -5,7 +5,7 @@ pipeline {
         stage('Setup') {
             steps {
                 sh 'npm install'
-                sh 'sc'
+                sh './sc'
             }
         }
         stage('Static Code Analysis') {
