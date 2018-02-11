@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Functional Test') {
             steps {
-                sh 'make functional_tests'
+                sh 'docker ps'
             }
         }
     }
