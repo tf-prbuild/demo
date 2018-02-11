@@ -1,8 +1,11 @@
-all: setup static_code_analysis unit_tests functional_tests
+all: setup
 
 setup:
 	@echo "\n\n\n--------\nRunning setup...\n--------\n\n"
+	node --version
+	npm --version
 	npm install
+
 
 static_code_analysis:
 	@echo "\n\n\n--------\nRunning JSHint...\n--------\n\n"
