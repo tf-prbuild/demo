@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Functional Test') {
             steps {
-                sauce('saucelabs') {
+                sauce('titus') {
                     sauceconnect(useGeneratedTunnelIdentifier: true, verboseLogging: true) {
                         sh 'make functional_tests'
                     }
